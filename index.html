@@ -13,14 +13,18 @@
 
 <header class="bar">
   <div class="wrap">
-    <div class="brand">Vibhor<span>.</span></div>
+    <a class="brand" href="#about">Vibhor<span>.</span></a>
     <div class="navwrap">
-      <nav class="top" aria-label="Primary">
+      <nav class="top" id="primary-nav" aria-label="Primary">
         <a href="#work">Work</a>
-        <a href="#craft" class="hideable">Craft</a>
-        <a href="#about" class="hideable">About</a>
+        <a href="#craft">Craft</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
     </div>
   </div>
 </header>
@@ -49,7 +53,7 @@
   <section class="why" aria-label="How I work">
     <div class="wrap">
       <div class="leaf">
-        <div>
+        <div class="reveal">
           <p class="eyebrow" style="margin-bottom:20px;">How I work</p>
           <h2 class="disp">Human first, human last.</h2>
           <p>Every project starts with a real person and the thing they're struggling with — not a brief, not a trend, not a screen. That's the <em>human first</em>.</p>
@@ -72,7 +76,7 @@
       </div>
       <p class="sec-intro">Three projects where I can show my whole reasoning — who it was for, what was hard, and what changed by the end.</p>
 
-      <a class="work" href="#" aria-label="Read the Maestro case study">
+      <a class="work reveal" href="#" aria-label="Read the Maestro case study">
         <div class="leaf">
           <div>
             <div class="tag">UX case study</div>
@@ -91,7 +95,7 @@
         </div>
       </a>
 
-      <a class="work" href="#" aria-label="Read the Namma Metro research">
+      <a class="work reveal" href="namma-metro.html" aria-label="Read the Namma Metro research">
         <div class="leaf">
           <div>
             <div class="tag">Research &amp; problem analysis</div>
@@ -110,7 +114,7 @@
         </div>
       </a>
 
-      <a class="work" href="#" aria-label="Read the Huabi Art Gallery case study">
+      <a class="work reveal" href="#" aria-label="Read the Huabi Art Gallery case study">
         <div class="leaf">
           <div>
             <div class="tag">UX / UI</div>
@@ -140,14 +144,14 @@
       </div>
       <p class="sec-intro">Not everything is a case study, and I won't pretend it is. Some of this is just craft — made to keep my hands busy, my eye honest, and my range wide.</p>
 
-      <div class="grid">
-        <div class="tile"><div class="thumb">[ image ]</div><div class="meta"><h4>Gracias</h4><p>Mobile app — product UI</p></div></div>
-        <div class="tile"><div class="thumb">[ image ]</div><div class="meta"><h4>Hermosa</h4><p>Mobile — product UI</p></div></div>
-        <div class="tile"><div class="thumb">[ image ]</div><div class="meta"><h4>ICORD 2023</h4><p>Campaign &amp; brand design</p></div></div>
-        <div class="tile"><div class="thumb">[ image ]</div><div class="meta"><h4>Cirillo</h4><p>Bluetooth speaker — form study</p></div></div>
-        <div class="tile"><div class="thumb">[ image ]</div><div class="meta"><h4>36 Days of Type</h4><p>Typography</p></div></div>
-        <div class="tile"><div class="thumb">[ image ]</div><div class="meta"><h4>3D renders</h4><p>Product visualisation</p></div></div>
-        <div class="tile"><div class="thumb">[ image ]</div><div class="meta"><h4>Motion</h4><p>Animation &amp; motion graphics</p></div></div>
+      <div class="grid stagger">
+        <div class="tile reveal"><div class="thumb">[ image ]</div><div class="meta"><h4>Gracias</h4><p>Mobile app — product UI</p></div></div>
+        <div class="tile reveal"><div class="thumb">[ image ]</div><div class="meta"><h4>Hermosa</h4><p>Mobile — product UI</p></div></div>
+        <div class="tile reveal"><div class="thumb">[ image ]</div><div class="meta"><h4>ICORD 2023</h4><p>Campaign &amp; brand design</p></div></div>
+        <div class="tile reveal"><div class="thumb">[ image ]</div><div class="meta"><h4>Cirillo</h4><p>Bluetooth speaker — form study</p></div></div>
+        <div class="tile reveal"><div class="thumb">[ image ]</div><div class="meta"><h4>36 Days of Type</h4><p>Typography</p></div></div>
+        <div class="tile reveal"><div class="thumb">[ image ]</div><div class="meta"><h4>3D renders</h4><p>Product visualisation</p></div></div>
+        <div class="tile reveal"><div class="thumb">[ image ]</div><div class="meta"><h4>Motion</h4><p>Animation &amp; motion graphics</p></div></div>
       </div>
     </div>
   </section>
@@ -159,12 +163,12 @@
         <div>
           <h2 class="disp">Before you go — the part that matters.</h2>
 
-          <div class="trust">
-            <div class="quote">
+          <div class="trust stagger">
+            <div class="quote reveal">
               <p class="q">“[ a real thing a collaborator, client, or teammate said about working with you ]”</p>
               <p class="slottag">[ replace with a genuine quote — never a made-up one ]</p>
             </div>
-            <div class="quote">
+            <div class="quote reveal">
               <p class="q">“[ a second voice — a mentor, a user, anyone whose trust you earned ]”</p>
               <p class="attr">— <span class="slottag" style="font-style:normal;">[ name, role ]</span></p>
             </div>
@@ -204,21 +208,6 @@
   <div class="wrap">Designed by hand, in 2026. Human first, human last.</div>
 </footer>
 
-<script>
-  (function(){
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var notes = document.querySelectorAll('.note');
-    if(reduce || !('IntersectionObserver' in window)){
-      notes.forEach(function(n){n.classList.add('in');});
-      return;
-    }
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    },{threshold:.5});
-    notes.forEach(function(n){io.observe(n);});
-  })();
-</script>
+<script src="main.js" defer></script>
 </body>
 </html>
